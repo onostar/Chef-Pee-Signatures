@@ -135,7 +135,7 @@
             <p>We will deliver in a bit</p>
             <div class='buttons'>
                 <a href='index.html'><button>Home</button</a>
-                <a href='order.html'><button>New Order</button</a>
+                <a href='order.html'><button>Order more</button</a>
             </div>
         </div>
     </div>

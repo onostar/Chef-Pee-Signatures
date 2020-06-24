@@ -26,8 +26,58 @@
         <link rel='stylesheet' href='fontawesome-free-5.12.1-web/css/all.css'>
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css'>
         <link rel='stylesheet' href='bootstrap.min.css'>
-       
         <link rel='stylesheet' href='style.css'>
+        <style>
+            .contact_confirm{
+                position:absolute;
+                top:10vh;
+                left:0;
+                width:100%;
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                align-items:center;
+                background:transparent;
+                z-index:2;
+            }
+            .contact_success{
+                box-shadow:2px 2px 2px #c4c4c4;
+                background:rgb(201, 104, 120);
+                color:#fff;
+                text-align:center;
+                padding:10px;
+                font-size:1.2rem;
+                animation:1s zoomOut 1;
+            }
+            @keyframes zoomOut{
+                0%{
+                    opacity:0;
+                    transform:scale(0);
+                }
+                100%{
+                    opacity:1;
+                    transform:scale(1);
+                }
+            }
+            .contact_success button{
+                padding:5px;
+                background-color:#fff;
+                color:#fff;
+                text-decoration:none;
+                transition:.5s all;
+            }
+            .contact_success button a{
+                padding:10px;
+                
+            }
+            .contact_success button:hover{
+                background-color:rgba(122, 52, 64, 0.9);
+
+            }
+            .contact_success button a:hover{
+                color:#fff;
+            }
+        </style>
     </head>
     <body>
         <section class='frontPage' id='contactPage'>
@@ -146,8 +196,12 @@
     <div class='help'>
         <a href='javascript:void(0)'><i class='fab fa-whatsapp'></i> How may we be of help?</a>
     </div>
-    <script src='script.js'></script>
-    <script>alert('Thanks for Contacting us!!! \n We will be in touch shortly')</script>
+    <div class='contact_confirm'>
+        <div class='contact_success'>
+            <p>Thanks for contacting us!!!<br> We will be in touch shortly!</p>
+            <button><a href='contact.html'>ok</a></button>
+        </div>
+    </div>
 </body>
 </html>";
 

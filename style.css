@@ -682,7 +682,7 @@ footer .copy-right{
 }
 .order_confirmation{
     position:absolute;
-    top:0;
+    top:10vh;
     left:0;
     width:100%;
     display:flex;
@@ -698,7 +698,8 @@ footer .copy-right{
     align-items: center;
     text-align: center;
     padding:20px;
-    background:rgba(248, 246, 246, 0.9);
+    color:#fff;
+    background:rgb(214, 113, 130);
     z-index:2;
     width:300px;
     height:auto;
@@ -722,6 +723,7 @@ footer .copy-right{
 .order_confirmation .buttons button{
     padding:5px 10px;
     border-radius:0;
+    background:rgb(105, 42, 52);
     
 }
 @keyframes displayOrderMore{
